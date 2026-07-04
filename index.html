@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#131824" />
+    <title>Browser Piano</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Web Audio</p>
+          <h1>Browser Piano</h1>
+          <p class="subtitle">Tap, click, or drag across the keyboard to play.</p>
+        </div>
+        <label class="volume-control" for="volume">
+          <span>Volume</span>
+          <input id="volume" type="range" min="0.1" max="1" step="0.05" value="0.7" />
+        </label>
+      </header>
+
+      <section class="keyboard-shell">
+        <div id="piano" class="piano" aria-label="ピアノ鍵盤"></div>
+      </section>
+
+      <p id="status" class="status">Tap the keyboard to wake the audio engine.</p>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
